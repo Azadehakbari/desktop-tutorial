@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIDS TODO</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    
+    <div class="app">
+    <div class="sidebar">
+        <nav >
+            <div class="profile">
+                <img src="images/profile.jpeg" alt >
+               <h4>ارتینا امین</h4>
+            </div>
+
+         <div class="user">
+            <button type="button" id="user">ورود/ثبت</button>
+         </div>
+
+
+            <ul class="navbar">
+                
+                <li class="li-navbar">
+                    <span class="icon-profile"></span>
+                    <a href="#">
+                    پروفایل
+                </a>
+                </li>
+                <li class="li-navbar">
+<span class="icon-list">
+
+</span>
+                    <a href="" id="open-Menu">
+                لیست تمام کارها
+
+              
+
+                    </a>
+                      <ul class="sub-menu">
+                    
+                </ul>
+                </li>
+                <li class="li-navbar">
+                    
+                    <span class="icon-setting"></span>
+                    <a href="" id="setting">
+                    تنظیمات
+
+                    </a>
+                    <div class="dark-mode">
+                        <button class="themSwitcher">
+                            <img src="images/sun.png" >
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <header class="main-header">
+            <h1>کارهای من</h1>
+            <p>امروز چه کارهایی داری؟</p>
+        </header>
+        <section class="add-task">
+            <input type="text" placeholder="کار جدیدت رو بنویس" id="addt">
+            <button type="button"  id="btnAdd">+</button>
+
+        </section>
+        <section class="task-list">
+            <!--<div class="task-item">
+                <div class="task-content">
+                <input type="checkbox" class="checkbox">
+                <span class="items">مسواک زدن</span>
+                </div>
+                <button class="delete-task"></button>
+            </div>-->
+           
+
+        </section>
+        <section class="task-filters">
+            <button type="button" class="filter-btn" data-filter="all">همه</button>
+            <button type="button" class="filter-btn" data-filter="pending">کارایی که باید انجام بدی!!</button>
+            <button type="button" class="filter-btn" data-filter="complate">آفرین ! تمومشون کردی</button>
+
+        </section>
+        <button type="button" class="clear-tasks">حذف تکمیل شده ها</button>
+    </main>
+</div>
+
+
+
+<div class="profile-modal">
+    <div class="profile-box">
+        <button type="button" class="close-profile">بستن پروفایل</button>
+
+<form class="profile-form">
+<label>
+    نام و نام خانوادگی:
+    <input type="text" class="profile-name">
+    
+</label>
+<label>
+     پایه تحصیلی:
+     <input type="text" class="profile-garde">
+ </label>
+<label>
+ورزش مورد علاقه:
+<input type="text" class="profile-sport">
+
+</label>
+<label>
+سن:
+<input type="number" class="profile-age">
+
+
+</label>
+<div class="gender-field">
+    <span class="gender-title">جنسیت:</span>
+    <label  class="gender-option"> 
+       
+        <input type="radio" name="gender" data-gender="girl">
+         <span>
+        دختر
+        </span>
+    </label>
+    <label class="gender-option">
+       
+        <input type="radio" name="gender" data-gender="boy">
+         <span> پسر
+            </span>
+    </label>
+</div>
+<div class="profile-image-field">
+    
+    <label  class="image-upload">انتخاب عکس 
+        <input type="file" class="profile-img" accept="image/*">
+    </label>
+</div>
+<button type="submit" class="save-profile"> ثبت کن</button>
+</form>
+</div>
+</div>
+<script src="script.js"></script>
+
+
+
+</body>
+
+    
+    
+
+</html>
